@@ -1,20 +1,155 @@
 <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abuela Faustina</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Style.css -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <img src="media/logo.jpg" alt="" width="50" height="24" class="d-inline-block align-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservas.html">Reservas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <h1>Productos</h1>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="media/carousel/1.jpg" alt="1">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/carousel/3.jpg" alt="2">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/carousel/2.jpg" alt="3">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 posicion">
+                <div class="row_imagen"><img src="Imagenes/img_deafut.PNG" alt=""></div>
+            </div>
+
+            <div class="col-sm-6 posicion">
+                <h1>MyTitulo de texto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias recusandae molestiae numquam
+                    nostrum sapiente placeat cumque illo aut rerum praesentium delectus beatae quibusdam non quia
+                    temporibus, dolorem, mollitia deleniti Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ipsum, quod quo. Incidunt praesentium rem quisquam veritatis iste quod sunt repellendus.
+                    Perspiciatis exercitationem facilis iste porro veniam possimus minima enim maxime.</p>
+                <button type="button boton_color" class="btn btn-primary" data-toggle="collapse"
+                    data-target="#demo">Conocer más</button>
+                <div id="demo" class="collapse"> Pagina en proceso, ya pasara algo! </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 posicion">
+                <h1>MyTitulo de texto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias recusandae molestiae numquam
+                    nostrum sapiente placeat cumque illo aut rerum praesentium delectus beatae quibusdam non quia
+                    temporibus, dolorem, mollitia deleniti Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ipsum, quod quo. Incidunt praesentium rem quisquam veritatis iste quod sunt repellendus.
+                    Perspiciatis exercitationem facilis iste porro veniam possimus minima enim maxime.</p>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Abrir modal
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Titulo</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsam id harum maxime et itaque cupiditate enim nemo similique cumque exercitationem asperiores, iusto iste, corrupti saepe error commodi. Enim, rerum!
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 posicion">
+                <div class="row_imagen"><img src="Imagenes/img_deafut.PNG" alt=""></div>
+            </div>
+        </div>
     </main>
     <footer>
-
+        <p class="font-footer">Todos los derechos reservados para Abuela Faustina</p>
     </footer>
 </body>
+
+<body>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

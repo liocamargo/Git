@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuela Faustina</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!--Cuerpo-->
+
+<body>
+    <header>
+        <section class="grid-menu">
+            <div>Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="Historia.html">Historia</a></li>
+                    <li><a href="Galeria.html">Galeria</a></li>
+                    <li><a href="Reservas.html">Reservas</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <form>
+            <h1>Reservas</h1>
+            <fieldset>
+                <legend>Reserva de habitación</legend>
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" name="nombre">
+                <br>
+
+                <label for="telefono">Teléfono</label>
+                <input type="number" name="telefono">
+                <br>
+
+                <label for="habitacion">¿Qué habitación deseas?</label>
+                <select name="habitacion">
+                    <option value="1">Habitacción 1</option>
+                    <option value="2">Habitacción 2</option>
+
+                    <label for="conocer">¿Conoces nuestras cabañas?</label>
+                    <input type="radio" id="Si" name="conocer" value="Si">
+                    <label for="Si">Si</label>
+                    <input type="radio" id="No" name="conocer" value="No">
+                    <label for="No">No</label><br>
+
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar formulario">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <address>
+            San Francisco del Monte de Oro, San Luis
+        </address>
+    </footer>
+
+</body>
+
+</html>

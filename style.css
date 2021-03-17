@@ -1,0 +1,28 @@
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-collapse {
+  justify-content: end;
+}
+
+footer {
+  justify-content: center;
+  padding: 20px;
+  background-color: #363636;
+}
+
+.font-footer {
+  text-align: center;
+  color: #fff;
+}
+
+.posicion {
+  padding: 150px;
+}
+
+@media (max-width: 576px) {
+  .posicion {
+    padding: 30px;
+  }
