@@ -11,6 +11,25 @@ body {
   justify-content: end;
 }
 
+.padding_info {
+  padding: 50px 0 50px;
+  align-items: center;
+}
+
+.img {
+  padding: 12px;
+}
+
+.jumbotron {
+  text-align: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.titulo-1 {
+  padding-right: 150px;
+}
+
 footer {
   justify-content: center;
   padding: 20px;
