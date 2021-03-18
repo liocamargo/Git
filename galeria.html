@@ -1,42 +1,75 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abuela Faustina</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- style.css-->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-
-<!--Cuerpo-->
 
 <body>
     <header>
-        <section class="grid-menu">
-            <div>Logo</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="Historia.html">Historia</a></li>
-                    <li><a href="Galeria.html">Galeria</a></li>
-                    <li><a href="Reservas.html">Reservas</a></li>
+          <!-- Barra deavegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Abuela Faustina</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="historia.html">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reservas.html">Reservas</a>
+                  </li>
                 </ul>
-            </nav>
-        </section>
-    </header>
-    <main>
-        <h1>Galeria</h1>
-    </main>
+              </div>
+            </div>
+          </nav>
+
+          <div class="bg-primary py-5 mb-5">
+            <div class="container h-100">
+              <div class="row h-100 align-items-center">
+                <div class="col-lg-12">
+                  <h1 class="display-4 text-white mt-5 mb-2">Galeria</h1>
+                  <p class="lead mb-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non possimus ab labore provident mollitia. Id assumenda voluptate earum corporis facere quibusdam quisquam iste ipsa cumque unde nisi, totam quas ipsam.</p>
+                </div>
+              </div>
+            </div>
+    </div>
+
+<main>
+
+
+
+</main>
 
     <footer>
-        <address>
-            San Francisco del Monte de Oro, San Luis
-        </address>
+        <p class="font-footer">Todos los derechos reservados para Abuela Faustina</p>
     </footer>
 
-</body>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+</body>
 </html>
