@@ -9,8 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- style.css-->
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -18,14 +20,16 @@
 <body>
     <header>
         <!-- Barra de navegación -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top sombra">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Abuela Faustina</a>
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="/media/logo-1.png" alt="">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="collapse navbar-collapse posicion-nav" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">Inicio</a>
@@ -47,19 +51,50 @@
             </div>
         </nav>
         </div>
+    </header>
         <main>
-            <div class="jumbotron">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-                    attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.
-                </p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
-            </div>
+            <!--Carousel-->
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner sombra">
+                    <div class="carousel-item active">
+                        <img src="/media/san-francisco-1.jpg" alt="Imagen-1" width="1100" height="350">
+                        <div class="carousel-caption">
+                            <h1>Un lugar con historia</h1>
+                            <p>El Abuela Faustina se encuentra en San Francisco del Monte de Oro y ofrece un jardín y wifi gratis en todo el recinto. El alojamiento ofrece estacionamiento privado gratuito y servicio de alquiler de bicicletas.
 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/media/san-francisco-1.jpg" alt="Imagen-2" width="1100" height="350">
+                        <div class="carousel-caption">
+                            <h1>Habitaciones totalmente equipadas</h1>
+                            <p>Todas las habitaciones están equipadas con heladera, fogones, hervidor de agua, ducha, secador de pelo y armario. Las habitaciones están equipadas con baño privado con artículos de aseo gratuitos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item texto-carousel">
+                        <img src="/media/san-francisco-1.jpg" alt="Imagen-3" width="1100" height="350">
+                        <div class="carousel-caption">
+                            <h1>Un lugar para volver mil veces</h1>
+                            <p>En San Francisco del Monte de Oro y sus alrededores se pueden practicar diversas actividades, como ciclismo.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <!--Contenido 1-->
             <div class="container">
                 <div class="row padding_info">
                     <div class="col-sm-6">
@@ -74,8 +109,15 @@
                     </div>
                 </div>
             </div>
+
+
+
+            <!--Contenido 2-->
             <div class="container">
                 <div class="row padding_info">
+                    <div class="col-sm-6">
+                        <img src="/media/img_deafut.PNG" alt="">
+                    </div>
                     <div class="col-sm-6">
                         <h1>Titulo</h1>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -83,13 +125,8 @@
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.
                     </div>
-                    <div class="col-sm-6">
-                        <img src="/media/img_deafut.PNG" alt="">
-                    </div>
-
                 </div>
             </div>
-
 
         </main>
         <footer>
