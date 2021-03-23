@@ -1,7 +1,3 @@
-body {
-  padding-top: 56px;
-}
-
 .carousel-inner img {
   width: 100%;
   height: 100%;
@@ -25,9 +21,17 @@ h1 {
   font-size: 52px;
 }
 
+.carousel-caption {
+  padding-bottom: 200px;
+}
+
 .padding_info {
   padding: 50px 0 50px;
   align-items: center;
+}
+
+.fondo-portada {
+    background-color: #c38f5d;
 }
 
 .sombra {
@@ -36,6 +40,11 @@ h1 {
 
 .img-1 {
   padding: 12px;
+}
+
+.img-des {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .jumbotron {
