@@ -1,9 +1,14 @@
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
+/*General*/
+h1 {
+  font-size: 52px;
 }
 
-.logo {
+.element-spacer {
+  height: 50px;
+}
+
+/*Header*/
+.header_logo {
   height: 75px;
 }
 
@@ -12,13 +17,19 @@
   font-size: 18px;
 }
 
+.nav-style {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*Main*/
 .carousel-inner img {
   width: 100%;
   height: 100%;
 }
 
-h1 {
-  font-size: 52px;
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
 }
 
 .carousel-caption {
@@ -30,21 +41,9 @@ h1 {
   align-items: center;
 }
 
+/*Main paginas*/
 .fondo-portada {
     background-color: #c38f5d;
-}
-
-.nav-style {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.img-1 {
-  padding: 12px;
-}
-
-.img-des {
-  width: 100%;
-  border-radius: 12px;
 }
 
 .jumbotron {
@@ -53,10 +52,17 @@ h1 {
   height: 400px;
 }
 
-.titulo-1 {
+.main_descrip {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.main_titulos {
   padding-right: 150px;
 }
 
+
+/*Footer*/
 footer {
   justify-content: center;
   padding: 20px;
@@ -64,21 +70,8 @@ footer {
   background-image: linear-gradient(180deg, #dcdcdc, #fff);
 }
 
-.element-spacer {
-  height: 50px;
-}
-
-.font-footer {
+.footer_font {
   text-align: center;
   color: #363636;
 }
 
-.posicion {
-  padding: 150px;
-}
-
-@media (max-width: 576px) {
-  .posicion {
-    padding: 30px;
-  }
-}
