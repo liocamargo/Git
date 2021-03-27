@@ -34,7 +34,7 @@ h1 {
     background-color: #c38f5d;
 }
 
-.sombra {
+.nav-style {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -60,12 +60,17 @@ h1 {
 footer {
   justify-content: center;
   padding: 20px;
-  background-color: #363636;
+  background-color: #363636; /* For browsers that do not support gradients */
+  background-image: linear-gradient(180deg, #dcdcdc, #fff);
+}
+
+.element-spacer {
+  height: 50px;
 }
 
 .font-footer {
   text-align: center;
-  color: #fff;
+  color: #363636;
 }
 
 .posicion {
