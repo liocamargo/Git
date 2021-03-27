@@ -21,6 +21,12 @@ h1 {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.posicion-nav a:hover {
+  background-color: rgb(190, 163, 140);
+  border-radius: 50px;
+  color: #fff;
+}
+
 /*Main*/
 .carousel-inner img {
   width: 100%;
